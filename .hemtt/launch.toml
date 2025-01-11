@@ -14,8 +14,3 @@ extends = "default"
 workshop = [
     "463939057", # ACE
 ]
-
-[previews]
-extends = "default"
-mission = "Previews.VR"
-parameters = ["-name=Previews"]
