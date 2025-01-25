@@ -13,7 +13,5 @@
         "*.inc": "arma-config",
         "*.cfg": "arma-config",
         "*.rvmat": "arma-config"
-    },
-
-    "C_Cpp.errorSquiggles": "disabled"
+    }
 }
