@@ -17,4 +17,3 @@ class CfgPatches {
 };
 
 #include "CfgSettings.hpp"
-#include "CfgEventHandlers.hpp"

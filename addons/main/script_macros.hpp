@@ -75,20 +75,20 @@
 // Statements and conditions
 #define CLAMP(var1,lower,upper) (lower max (var1 min upper))
 
-// weapon types
+// Weapon types
 #define TYPE_WEAPON_PRIMARY 1
 #define TYPE_WEAPON_HANDGUN 2
 #define TYPE_WEAPON_SECONDARY 4
-// magazine types
+// Magazine types
 #define TYPE_MAGAZINE_HANDGUN_AND_GL 16 // mainly
 #define TYPE_MAGAZINE_PRIMARY_AND_THROW 256
 #define TYPE_MAGAZINE_SECONDARY_AND_PUT 512 // mainly
 #define TYPE_MAGAZINE_MISSILE 768
-// more types
+// More types
 #define TYPE_BINOCULAR_AND_NVG 4096
 #define TYPE_WEAPON_VEHICLE 65536
 #define TYPE_ITEM 131072
-// item types
+// Item types
 #define TYPE_DEFAULT 0
 #define TYPE_MUZZLE 101
 #define TYPE_OPTICS 201
