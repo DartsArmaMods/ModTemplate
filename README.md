@@ -34,6 +34,8 @@ Delete this section after the project has been initially set up:
    - This should be all uppercase.
 5. After the initial Steam upload, find and replace all instances of `MOD_ID` with the mod's Steam Workshop id.
 
+For third parties, make sure to also replace `DartsArmaMods` with your Github username / organization name, and to replace `DartRuffian` with your username.
+
 **MOD_TITLE** (MOD_ACRONYM) aims to...
 
 The project is entirely **open-source** and any contributions are welcome.
