@@ -3,8 +3,9 @@
 #define MOD_NAME MOD_TITLE
 #define AUTHOR "DartRuffian"
 
-#define REQUIRED_VERSION 2.18
-#define REQUIRED_CBA_VERSION {3,18,1}
+#define REQUIRED_VERSION 2.20
+#define REQUIRED_CBA_VERSION {3,18,4}
+#define REQUIRED_ACE_VERSION {3,20,0}
 
 #include "script_version.hpp"
 

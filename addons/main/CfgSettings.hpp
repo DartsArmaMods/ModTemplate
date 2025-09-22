@@ -5,7 +5,7 @@ class CfgSettings {
                 main_addon = QUOTE(ADDON);
 
                 class dependencies {
-                    CBA[] = {"cba_main", REQUIRED_CBA_VERSION, QUOTE(true)};
+                    CBA[] = {"cba_main", REQUIRED_CBA_VERSION, "true"};
                 };
             };
         };
