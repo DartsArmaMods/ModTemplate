@@ -15,7 +15,7 @@
         <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="MOD_TITLE License">
     </a>
     <br>
-    <img src="https://img.shields.io/github/actions/workflow/status/DartsArmaMods/MOD_REPO/build.yml?style=flat-square&label=Build" alt="Build">
+    <img src="https://img.shields.io/github/actions/workflow/status/DartsArmaMods/MOD_REPO/check.yml?style=flat-square&label=HEMTT" alt="HEMTT">
 </p>
 
 <p align="center">
