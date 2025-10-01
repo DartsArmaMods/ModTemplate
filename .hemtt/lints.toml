@@ -4,3 +4,32 @@ options.banned = [
     "execVM", # Script files should never be run directly, they should be functions
     "remoteExec", # CBA events should be used for networking
 ]
+
+[sqf.banned_macros]
+options.release = [
+    "DEBUG_MODE_FULL",
+    "DISABLE_COMPILE_CACHE"
+]
+
+[sqf.this_call]
+enabled = true
+
+[sqf.undefined]
+enabled = true
+options.check_orphan_code = true
+
+[sqf.unused]
+enabled = true # many false positives without DEBUG_MODE_FULL
+options.check_params = false
+
+[sqf.shadowed]
+enabled = false
+
+[sqf.not_private]
+enabled = true
+
+[config.file_type]
+options.allow_no_extension = false
+
+[stringtables.usage]
+options.ignore_unused = true

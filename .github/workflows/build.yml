@@ -1,4 +1,4 @@
-name: HEMTT
+name: Build
 
 on:
   push:
@@ -9,12 +9,20 @@ on:
       - main
 
 jobs:
-  check:
+  validate:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout the source code
       uses: actions/checkout@v4
+
+    - name: Validate Config
+      run: python tools/config_style_checker.py
+    - name: Check for BOM
+      uses: arma-actions/bom-check@master
+      with:
+        path: "addons"
+
     - name: Setup HEMTT
       uses: arma-actions/hemtt@v1
     - name: Run HEMTT check
-      run: hemtt check
+      run: hemtt check --pedantic
