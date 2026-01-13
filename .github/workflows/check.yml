@@ -25,4 +25,4 @@ jobs:
     - name: Setup HEMTT
       uses: arma-actions/hemtt@v1
     - name: Run HEMTT check
-      run: hemtt check --pedantic
+      run: hemtt check -e --pedantic
