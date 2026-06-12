@@ -15,6 +15,21 @@
                 "kind": "build",
                 "isDefault": true
             }
+        },
+        {
+            // Builds the addon of the file you're editing
+            "label": "HEMTT Build --just",
+            "command": "python",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "args": [
+                "tools/build_current_addon.py",
+                "${relativeFile}"
+            ],
+            "group": {
+                "kind": "build"
+            }
         }
     ]
 }

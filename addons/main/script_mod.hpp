@@ -4,8 +4,8 @@
 #define AUTHOR "DartRuffian"
 
 #define REQUIRED_VERSION 2.20
-#define REQUIRED_CBA_VERSION {3,18,4}
-#define REQUIRED_ACE_VERSION {3,20,0}
+#define REQUIRED_CBA_VERSION {3,18,6}
+#define REQUIRED_ACE_VERSION {3,21,0}
 
 #include "script_version.hpp"
 
