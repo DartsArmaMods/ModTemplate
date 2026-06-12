@@ -46,4 +46,4 @@ The project is entirely **open-source** and any contributions are welcome.
 For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
 
 ## License
-MOD_TITLE is licensed under [APL-ND](./LICENSE.md).
+MOD_TITLE is licensed under [Legion Studios License](https://github.com/Legion-Studios/LegionCore-Public/blob/master/LICENSE.md).
