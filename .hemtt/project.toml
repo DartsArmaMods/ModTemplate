@@ -20,5 +20,8 @@ include = [
 ]
 exclude = []
 
+[hemtt.release]
+archive = false
+
 [properties]
 author = "DartRuffian"

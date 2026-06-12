@@ -1,4 +1,5 @@
 @ECHO off
-hemtt script update_build.rhai
-hemtt script update_minor.rhai
-hemtt release
+@REM If running from tools, move to project folder
+if /i [%cd:~-5%]==[tools] cd ..
+
+python ./tools/release.py

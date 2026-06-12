@@ -3,7 +3,7 @@
 <h1 align="center">MOD_TITLE</h1>
 <p align="center">
     <a href="https://github.com/DartsArmaMods/MOD_REPO/releases/latest">
-        <img src="https://img.shields.io/badge/Version-0.0.0-blue?style=flat-square" alt="MOD_TITLE Version">
+        <img src="https://img.shields.io/badge/Version-1.6.0-blue?style=flat-square" alt="MOD_TITLE Version">
     </a>
     <a href="https://github.com/DartsArmaMods/MOD_REPO/issues">
         <img src="https://img.shields.io/github/issues-raw/DartsArmaMods/MOD_REPO.svg?style=flat-square&label=Issues" alt="MOD_TITLE Issues">
