@@ -64,9 +64,12 @@ def main() -> None:
         subprocess.run(["hemtt", "script", f"update_{bump_script}.rhai"])
 
     logger.log(logger.LogLevel.INFO, "Writing loadorder requiredAddons")
-    addon_count = write_loadorder(prefix)
-    logger.log(logger.LogLevel.INFO,
-               f"Wrote {addon_count} addons to addons/loadorder/addons.hpp")
+    if (os.path.isdir("addons/loadorder")):
+        addon_count = write_loadorder(prefix)
+        logger.log(logger.LogLevel.INFO,
+                f"Wrote {addon_count} addons to addons/loadorder/addons.hpp")
+    else:
+        logger.log(logger.LogLevel.WARN, "No loadorder addon found, skipping")
 
     subprocess.run(["hemtt", "ln", "sort"])
 
