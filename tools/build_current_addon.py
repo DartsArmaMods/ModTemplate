@@ -7,6 +7,7 @@ Description:
 
 import sys
 import os
+import subprocess
 import logger
 
 
@@ -15,15 +16,26 @@ def main() -> None:
         filepath = sys.argv[1]
         if not (filepath.startswith("addons") or filepath.startswith("optionals")):
             logger.log(logger.LogLevel.ERROR,
-                       f"Failed to build: {filepath} is not an addon path")
+                       f"Failed to build: '{filepath}' is not an addon path")
+            return
 
-        addon = filepath.split("\\")[1]
-        logger.log(logger.LogLevel.INFO, f"Building addon: {addon}")
-        os.system(f"hemtt ln sort")
-        os.system(f"hemtt build --just {addon} --just translations")
+        # Translations should always be rebuilt, add it if current translation isn't translations
+        addons = [filepath.split(os.sep)[1]]
+        if addons[0].lower() != "translations":
+            addons.append("translations")
+
+        logger.log(logger.LogLevel.INFO,
+                   f"Building addon(s): {", ".join(addons)}")
+
+        command = ["hemtt", "build"]
+
+        for addon in addons:
+            command.extend(["--just", addon])
+
+        subprocess.run(command)
     except KeyboardInterrupt:
         # Echo "nothing" so the next message is on a new line
-        os.system("echo(")
+        subprocess.run(["echo("])
         logger.log(logger.LogLevel.INFO, "Canceling build")
 
 
