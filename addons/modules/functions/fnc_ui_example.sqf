@@ -27,10 +27,10 @@ private _unit = attachedTo _logic;
 private _exit = true;
 switch (false) do {
     case (!isNull _unit): {
-        ["$STR_ace_modules_nothingSelected", _logic, _display] call FUNC(errorAndClose);
+        ["$STR_ace_zeus_nothingSelected", _logic, _display] call FUNC(errorAndClose);
     };
     case (alive _unit): {
-        ["$STR_ace_modules_onlyAlive", _logic, _display] call FUNC(errorAndClose);
+        ["$STR_ace_zeus_onlyAlive", _logic, _display] call FUNC(errorAndClose);
     };
     default {
         _exit = false;

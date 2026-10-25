@@ -1,6 +1,5 @@
 class RscControlsGroupNoScrollbars;
 class RscText;
-class RscListBox;
 class ctrlToolbox;
 
 class RscDisplayAttributes {
@@ -45,8 +44,8 @@ class GVAR(AttributeToolbox): RscControlsGroupNoScrollbars {
 };
 
 class GVAR(RscExample): RscDisplayAttributes {
-    onLoad = QUOTE([ARR_3('onLoad',_this,QQGVAR(RscExample))] call ace_modules_fnc_modulesAttributes);
-    onUnload = QUOTE([ARR_3('onUnload',_this,QQGVAR(RscExample))] call ace_modules_fnc_modulesAttributes);
+    onLoad = QUOTE([ARR_3('onLoad',_this,QQGVAR(RscExample))] call ace_zeus_fnc_modulesAttributes);
+    onUnload = QUOTE([ARR_3('onUnload',_this,QQGVAR(RscExample))] call ace_zeus_fnc_modulesAttributes);
     class Controls: Controls {
         class Background: Background {};
         class Title: Title {};

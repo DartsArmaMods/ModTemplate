@@ -9,7 +9,7 @@ class CfgPatches {
         requiredVersion = REQUIRED_VERSION;
         requiredAddons[] = {
             "MOD_PREFIX_main",
-            "ace_modules"
+            "ace_zeus"
         };
         units[] = {
         };
@@ -22,4 +22,3 @@ class CfgPatches {
 #include "CfgFactionClasses.hpp"
 #include "CfgEventHandlers.hpp"
 #include "RscAttributes.hpp"
-#include "zen_context_menu_actions.hpp"
