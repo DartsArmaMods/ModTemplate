@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="MOD_ACRONYM">
-    <Package name="Main">
-        <Key ID="STR_MOD_PREFIX_main_displayName">
-            <English>Main</English>
-        </Key>
+    <Package name="main">
         <Key ID="STR_MOD_PREFIX_main_url">
             <English>https://github.com/DartsArmaMods/MOD_REPO</English>
             <Czech>https://github.com/DartsArmaMods/MOD_REPO</Czech>

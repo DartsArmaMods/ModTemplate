@@ -1,5 +1,4 @@
-<!-- If you want to make changes to this README, you need to also modify the README.md in the docs folder as well -->
-
+[//]: # (If you want to make changes to this README, you need to also modify the README.md in the docs folder as well)
 <h1 align="center">MOD_TITLE</h1>
 <p align="center">
     <a href="https://github.com/DartsArmaMods/MOD_REPO/releases/latest">
@@ -11,8 +10,8 @@
     <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=MOD_ID">
         <img src="https://img.shields.io/steam/downloads/MOD_ID.svg?style=flat-square&label=Downloads" alt="MOD_TITLE Downloads">
     </a>
-    <a href="https://github.com/DartsArmaMods/MOD_REPO/blob/master/LICENSE">
-        <img src="https://img.shields.io/badge/License-APL ND-red?style=flat-square" alt="MOD_TITLE License">
+    <a href="https://github.com/DartsArmaMods/MOD_REPO/blob/master/LICENSE.md">
+        <img src="https://img.shields.io/badge/License-Legion Studios-red?style=flat-square" alt="MOD_TITLE License">
     </a>
     <br>
     <img src="https://img.shields.io/github/actions/workflow/status/DartsArmaMods/MOD_REPO/check.yml?style=flat-square&label=HEMTT" alt="HEMTT">
@@ -35,7 +34,7 @@ Delete this section after the project has been initially set up:
 
 For third parties, make sure to also replace `DartsArmaMods` with your Github username / organization name, and to replace `DartRuffian` with your username.
 
-**MOD_TITLE** (MOD_ACRONYM) aims to...
+**MOD_TITLE** aims to...
 
 The project is entirely **open-source** and any contributions are welcome.
 
@@ -43,7 +42,7 @@ The project is entirely **open-source** and any contributions are welcome.
 - Feature
 
 ## Contributing
-For new contributers, see the [Contributing Setup & Guidelines](./.github/CONTRIBUTING.md).
+For new contributers, see the [Contributing Setup & Guidelines](https://github.com/DartsArmaMods/MOD_REPO/blob/main/.github/CONTRIBUTING.md).
 
 ## License
-MOD_TITLE is licensed under [Legion Studios License](https://github.com/Legion-Studios/LegionCore-Public/blob/master/LICENSE.md).
+MOD_TITLE is licensed under the [Legion Studios License](https://github.com/DartsArmaMods/HelmetOnAss/blob/main/LICENSE.md).

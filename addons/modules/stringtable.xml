@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="MOD_REPO">
-    <Package name="modules">
-    </Package>
+    <Package name="modules"></Package>
 </Project>

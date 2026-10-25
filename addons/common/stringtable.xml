@@ -1,8 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="MOD_ACRONYM">
-    <Package name="Common">
-        <Key ID="STR_MOD_PREFIX_common_displayName">
-            <English>Common</English>
-        </Key>
-    </Package>
+    <Package name="common"></Package>
 </Project>
