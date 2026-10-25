@@ -32,4 +32,4 @@ enabled = true
 options.allow_no_extension = false
 
 [stringtables.usage]
-options.ignore_unused = true
+options.ignore_unused = false

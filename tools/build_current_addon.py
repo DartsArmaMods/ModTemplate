@@ -32,6 +32,8 @@ def main() -> None:
         for addon in addons:
             command.extend(["--just", addon])
 
+        logger.log(logger.LogLevel.INFO, "Sorting stringtables")
+        subprocess.run(["hemtt", "ln", "sort"])
         subprocess.run(command)
     except KeyboardInterrupt:
         # Echo "nothing" so the next message is on a new line

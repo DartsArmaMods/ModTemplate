@@ -34,6 +34,7 @@ def write_loadorder(prefix: str) -> int:
         addons.append(folder)
 
     if addons:
+        addons.sort()
         with open("./addons/loadorder/addons.hpp", "w") as f:
             for addon in addons:
                 f.write(f'"{prefix}_{addon}",\n')
@@ -51,7 +52,7 @@ def main() -> None:
     with open(".hemtt/project.toml", "rb") as f:
         data = tomllib.load(f)
         prefix = data["prefix"]
-    logger.log(logger.LogLevel.INFO, f"Main Prefix: '{prefix}'")
+    logger.log(logger.LogLevel.INFO, f"Prefix: '{prefix}'")
 
     if not "--skip-bump" in sys.argv:
         logger.log(logger.LogLevel.INFO, "Bumping version")
@@ -67,7 +68,7 @@ def main() -> None:
     if (os.path.isdir("addons/loadorder")):
         addon_count = write_loadorder(prefix)
         logger.log(logger.LogLevel.INFO,
-                f"Wrote {addon_count} addons to addons/loadorder/addons.hpp")
+                   f"Wrote {addon_count} addons to addons/loadorder/addons.hpp")
     else:
         logger.log(logger.LogLevel.WARN, "No loadorder addon found, skipping")
 

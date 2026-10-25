@@ -20,8 +20,9 @@ include = [
 ]
 exclude = []
 
-[hemtt.release]
-archive = false
-
 [properties]
 author = "DartRuffian"
+
+[hemtt.publish]
+description = "README.md"
+changelog = "CHANGELOG.md"

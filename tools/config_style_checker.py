@@ -10,19 +10,11 @@ import fnmatch
 import os
 import re
 import sys
-import argparse
 import logger
 
 
-def check_config_style(filepath):
+def check_config_style(filepath: str):
     bad_count_file = 0
-
-    def pushClosing(t):
-        closingStack.append(closing.expr)
-        closing << Literal(closingFor[t[0]])
-
-    def popClosing():
-        closing << closingStack.pop()
 
     reIsClass = re.compile(r'^\s*class(.*)')
     reIsClassInherit = re.compile(r'^\s*class(.*):')
@@ -36,7 +28,7 @@ def check_config_style(filepath):
         content = file.read()
 
         # Store all brackets we find in this file, so we can validate everything on the end
-        brackets_list = []
+        brackets_list: list[str] = []
 
         # To check if we are in a comment block
         isInCommentBlock = False
@@ -53,7 +45,6 @@ def check_config_style(filepath):
         inStringType = ''
 
         lastIsCurlyBrace = False
-        checkForSemiColumn = False
 
         # Extra information so we know what line we find errors at
         lineNumber = 1
@@ -136,16 +127,6 @@ def check_config_style(filepath):
                         checkIfNextIsClosingBlock = False
             indexOfCharacter += 1
 
-        if brackets_list.count('[') != brackets_list.count(']'):
-            logger.log(logger.LogLevel.ERROR, f"A possible missing square bracket [ or ] in file {filepath} [ = {brackets_list.count('[')} ] = {brackets_list.count(']')}")
-            bad_count_file += 1
-        if brackets_list.count('(') != brackets_list.count(')'):
-            logger.log(logger.LogLevel.ERROR, f"A possible missing square bracket ( or ) in file {filepath} [ = {brackets_list.count('(')} ] = {brackets_list.count(')')}")
-            bad_count_file += 1
-        if brackets_list.count('{') != brackets_list.count('}'):
-            logger.log("A possible missing curly brace {{ or }} in file {0} {{ = {1} }} = {2}".format(filepath,brackets_list.count('{'),brackets_list.count('}')))
-            bad_count_file += 1
-
         file.seek(0)
         for lineNumber, line in enumerate(file.readlines()):
             if reIsClass.match(line):
@@ -173,7 +154,7 @@ def check_config_style(filepath):
 def main():
     logger.log(logger.LogLevel.INFO, "Validating config style")
 
-    sqf_list = []
+    sqf_list: list[str] = []
     bad_count = 0
 
     for folder in ['addons', 'optionals']:
@@ -182,7 +163,7 @@ def main():
         if (os.path.exists(folder)):
             rootDir = folder
 
-        for root, dirnames, filenames in os.walk(rootDir):
+        for root, _, filenames in os.walk(rootDir):
             for filename in fnmatch.filter(filenames, '*.cpp'):
                 sqf_list.append(os.path.join(root, filename))
             for filename in fnmatch.filter(filenames, '*.hpp'):
