@@ -45,4 +45,4 @@ The project is entirely **open-source** and any contributions are welcome.
 For new contributers, see the [Contributing Setup & Guidelines](https://github.com/DartsArmaMods/MOD_REPO/blob/main/.github/CONTRIBUTING.md).
 
 ## License
-MOD_TITLE is licensed under the [Legion Studios License](https://github.com/DartsArmaMods/HelmetOnAss/blob/main/LICENSE.md).
+MOD_TITLE is licensed under the [Legion Studios License](https://github.com/DartsArmaMods/MOD_REPO/blob/main/LICENSE.md).
