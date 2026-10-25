@@ -1,9 +1,6 @@
 name: HEMTT
 
 on:
-  push:
-    branches:
-      - main
   pull_request:
     branches:
       - main
@@ -17,6 +14,7 @@ jobs:
 
     - name: Validate Config
       run: python tools/config_style_checker.py
+
     - name: Check for BOM
       uses: arma-actions/bom-check@master
       with:
@@ -24,5 +22,6 @@ jobs:
 
     - name: Setup HEMTT
       uses: arma-actions/hemtt@v1
+
     - name: Run HEMTT check
       run: hemtt check --error-on-all --pedantic
