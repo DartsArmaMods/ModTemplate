@@ -4,14 +4,15 @@
  * Example module.
  *
  * Arguments:
- * 0: Player <OBJECT>
- * 1: Sling mode <NUMBER>
+ * 0: Module <OBJECT>
+ * 1: Affected units <ARRAY>
+ * 2: Activated <BOOL>
  *
  * Return Value:
  * None
  *
  * Example:
- * player call hoa_modules_fnc_moduleExample
+ * player call MOD_PREFIX_modules_fnc_moduleExample
  *
  * Public: No
  */
