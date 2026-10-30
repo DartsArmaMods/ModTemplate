@@ -16,6 +16,7 @@ include = [
     "logo_MOD_PREFIX_ca.paa",
     "logo_MOD_PREFIX_over_ca.paa",
     "LICENSE.md",
+    "CHANGELOG.md",
     "README.md",
 ]
 exclude = []
